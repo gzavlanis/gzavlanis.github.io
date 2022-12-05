@@ -1,4 +1,4 @@
-#myBtn {
+.place {
     position: fixed;
     z-index: 99;
     display: none;
