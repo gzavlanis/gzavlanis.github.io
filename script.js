@@ -2,7 +2,7 @@ let mybutton= document.getElementById("myBtn");
 window.onscroll= function() {scrollFunction()};
 window.onscroll= function() {myFunction()};
 
-var header= document.getElementById("myHeader");
+let header= document.getElementById("myHeader");
 var sticky= header.offsetTop;
 
 function scrollFunction(){
