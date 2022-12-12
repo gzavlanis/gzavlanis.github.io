@@ -1,5 +1,9 @@
 let mybutton= document.getElementById("myBtn");
 window.onscroll= function() {scrollFunction()};
+window.onscroll= function() {myFunction()};
+
+var header= document.getElementById("myHeader");
+var sticky= header.offsetTop;
 
 function scrollFunction(){
     if (document.body.scrollTop> 20 || document.documentElement.scrollTop> 20){
@@ -12,4 +16,12 @@ function scrollFunction(){
 function topFunction(){
     document.body.scrollTop= 0;
     document.documentElement.scrollTop= 0;
+}
+
+function myFunction(){
+    if (window.pageYOffset> sticky){
+        header.classList.add("sticky");
+    } else{
+        header.classList.remove("sticky");
+    }
 }
